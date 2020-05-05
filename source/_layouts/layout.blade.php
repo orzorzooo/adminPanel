@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="{{ mix('css/admin.css', 'assets/build') }}">
   <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -38,6 +38,7 @@
 
   <script type="text/javascript" src="{{ mix('js/admin.js', 'assets/build') }}"></script>
   <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>
+  @yield('script')
 </body>
 
 

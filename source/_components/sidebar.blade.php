@@ -95,7 +95,42 @@
           </a>
         </li>
 
+        <li class="app-sidebar__heading">訂單管理</li>
+        <li>
+          <a href="/order">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>訂單一覽
+          </a>
+        </li>
 
+
+        <li class="app-sidebar__heading">報表輸出</li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>報表輸出系統
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">LOG</li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>登入紀錄
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>操作紀錄
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>API呼叫紀錄
+          </a>
+        </li>
       </ul>
     </div>
   </div>

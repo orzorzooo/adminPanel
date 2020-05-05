@@ -1,0 +1,8 @@
+.app-header__logo .logo-src {
+  background-image: url("assets/images/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 300px;
+  left: -10px;
+}

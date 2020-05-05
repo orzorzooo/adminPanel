@@ -5,5 +5,10 @@ return [
     'baseUrl' => '',
     'title' => 'Jigsaw',
     'description' => 'Website description.',
-    'collections' => [],
+    'collections' => [
+        'admin'
+    ],
+    'selected' => function ($page, $section) {
+        return Str::contains($page->getPath(), $section) ? 'selected' : '';
+    },
 ];

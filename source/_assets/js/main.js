@@ -2,11 +2,12 @@
 import axios from "./axios.min.js";
 import vue from "./vue.min.js";
 import fakeData from "./generated.json";
+import productData from "./product.json";
 
 var app = new Vue({
   el: "#app",
   data: {
-    message: "Hello Vue!",
+    productDatas: productData,
     fakeDatas: fakeData,
   },
   // methods: {
@@ -21,3 +22,10 @@ var app = new Vue({
   //   },
   // },
 });
+
+// var product = new Vue({
+//   el: "#product",
+//   data: {
+//     productDatas: productData,
+//   },
+// });

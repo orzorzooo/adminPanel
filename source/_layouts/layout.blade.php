@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+  <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar" id=@yield('app_name')>
     @include('_components.header')
 
     <div class="app-main">
@@ -21,20 +21,18 @@
         <div class="app-main__inner">
 
           @yield('content')
-          {{-- @component('_components.page_title',[
-          'page_title' => 'Dashboard',
-          'page_description' => 'Some Description Here'
-          ])
-          @slot('page_title_actions')
-          @endcomponent --}}
+
 
         </div>
         @include('_components.footer')
 
 
       </div>
+
     </div>
+    @yield('modal')
   </div>
+
 
   <script type="text/javascript" src="{{ mix('js/admin.js', 'assets/build') }}"></script>
   <script type="text/javascript" src="{{ mix('js/main.js', 'assets/build') }}"></script>

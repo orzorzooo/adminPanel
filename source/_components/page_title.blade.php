@@ -2,7 +2,7 @@
   <div class="page-title-wrapper">
     <div class="page-title-heading">
       <div class="page-title-icon">
-        <i class="pe-7s-car icon-gradient bg-mean-fruit">
+        <i class="{{isset($page_icon) ? $page_icon : "pe-7s-lock icon-gradient bg-malibu-beach"}}">
         </i>
       </div>
       <div>

@@ -1307,14 +1307,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vue_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vue_min_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _generated_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./generated.json */ "./source/_assets/js/generated.json");
 var _generated_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./generated.json */ "./source/_assets/js/generated.json", 1);
+/* harmony import */ var _product_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./product.json */ "./source/_assets/js/product.json");
+var _product_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./product.json */ "./source/_assets/js/product.json", 1);
 // const axios = require("axios").default;
+
 
 
 
 var app = new Vue({
   el: "#app",
   data: {
-    message: "Hello Vue!",
+    productDatas: _product_json__WEBPACK_IMPORTED_MODULE_3__,
     fakeDatas: _generated_json__WEBPACK_IMPORTED_MODULE_2__
   } // methods: {
   //   getData: function() {
@@ -1328,7 +1331,23 @@ var app = new Vue({
   //   },
   // },
 
-});
+}); // var product = new Vue({
+//   el: "#product",
+//   data: {
+//     productDatas: productData,
+//   },
+// });
+
+/***/ }),
+
+/***/ "./source/_assets/js/product.json":
+/*!****************************************!*\
+  !*** ./source/_assets/js/product.json ***!
+  \****************************************/
+/*! exports provided: 0, 1, 2, 3, 4, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"imgUrl\":\"https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0\",\"name\":\"CHECK PRINT SHIRT\",\"price\":110,\"default\":true},{\"imgUrl\":\"https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0\",\"name\":\"GLORIA HIGH LOGO SNEAKER\",\"price\":91,\"default\":false},{\"imgUrl\":\"https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0\",\"name\":\"CATE RIGID BAG\",\"price\":94.5,\"default\":false},{\"imgUrl\":\"http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0\",\"name\":\"GUESS CONNECT WATCH\",\"price\":438.9,\"default\":true},{\"imgUrl\":\"https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0\",\"name\":\"'70s RETRO GLAM KEFIAH\",\"price\":20,\"default\":true}]");
 
 /***/ }),
 

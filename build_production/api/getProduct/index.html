@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/build/css/admin.css?id=b62b0f887a1ec79b9b1a">
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=0ea0fc2a9e0967df9494">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar" id=app>
+    <div class="app-header header-shadow">
+  <div class="app-header__logo">
+    <div class="logo-src"></div>
+    <div class="header__pane ml-auto">
+      <div>
+        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="app-header__mobile-menu">
+    <div>
+      <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="app-header__menu">
+    <span>
+      <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+        <span class="btn-icon-wrapper">
+          <i class="fa fa-ellipsis-v fa-w-6"></i>
+        </span>
+      </button>
+    </span>
+  </div>
+  <div class="app-header__content">
+    <div class="app-header-left">
+      <div class="search-wrapper">
+        <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Type to search">
+          <button class="search-icon"><span></span></button>
+        </div>
+        <button class="close"></button>
+      </div>
+    </div>
+    <div class="app-header-right">
+
+      <div class="header-btn-lg pr-0">
+        <div class="widget-content p-0">
+          <div class="widget-content-wrapper">
+            <div class="widget-content-left">
+              <div class="btn-group">
+                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                  <img width="42" class="rounded-circle" src="/assets/images/logo_140x140.png" alt="">
+                  <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                </a>
+                <div tabindex="-1" role="menu" aria-hidden="true"
+                  class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                  <div class="dropdown-menu-header">
+                    <div class="dropdown-menu-header-inner bg-info">
+                      <div class="menu-header-image opacity-2"
+                        style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                      <div class="menu-header-content text-left">
+                        <div class="widget-content p-0">
+                          <div class="widget-content-wrapper">
+                            <div class="widget-content-left mr-3">
+                              <img width="42" class="rounded-circle" src="./assets/images/logo_140x140.png" alt="">
+                            </div>
+                            <div class="widget-content-left">
+                              <div class="widget-heading">Admin
+                              </div>
+                              <div class="widget-subheading opacity-8">管理者
+                              </div>
+                            </div>
+                            <div class="widget-content-right mr-2">
+                              <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="nav flex-column">
+                    <li class="nav-item-divider mb-0 nav-item"></li>
+                  </ul>
+                  <div class="grid-menu grid-menu-2col">
+                    <div class="no-gutters row">
+                      <div class="col-sm-6">
+                        <button
+                          class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                          <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> 設定
+                        </button>
+                      </div>
+                      <div class="col-sm-6">
+                        <button
+                          class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                          <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                          <b>變更密碼</b>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="widget-content-left  ml-3 header-user-info">
+              <div class="widget-heading">
+                Admin
+              </div>
+              <div class="widget-subheading">
+                管理者
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <div class="app-main">
+
+      <div class="app-sidebar sidebar-shadow">
+  <div class="app-header__logo">
+    <div class="logo-src"></div>
+    <div class="header__pane ml-auto">
+      <div>
+        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="app-header__mobile-menu">
+    <div>
+      <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="app-header__menu">
+    <span>
+      <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+        <span class="btn-icon-wrapper">
+          <i class="fa fa-ellipsis-v fa-w-6"></i>
+        </span>
+      </button>
+    </span>
+  </div>
+  <div class="scrollbar-sidebar">
+    <div class="app-sidebar__inner">
+      <ul class="vertical-nav-menu">
+
+        <li class="app-sidebar__heading">管理者</li>
+        <li>
+          <a href="/admin">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>管理者權限系統
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">廠商</li>
+        <li>
+          <a href="/company">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>廠商列表
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">商品</li>
+        <li>
+          <a href="/product">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>編輯商品
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>預設商品上架
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">API</li>
+        <li>
+          <a href="/api">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>API教學
+          </a>
+        </li>
+        <li>
+          <a href="/api/show">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>憑證
+          </a>
+        </li>
+
+        <li>
+          <a href="/api/getProduct">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>上架商品
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>重新付款
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>訂單狀態
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">訂單管理</li>
+        <li>
+          <a href="/order">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>訂單一覽
+          </a>
+        </li>
+
+
+        <li class="app-sidebar__heading">報表輸出</li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>報表輸出系統
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">LOG</li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>登入紀錄
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>操作紀錄
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>API呼叫紀錄
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>      <div class="app-main__outer">
+        <div class="app-main__inner">
+
+          <div class="app-page-title">
+  <div class="page-title-wrapper">
+    <div class="page-title-heading">
+      <div class="page-title-icon">
+        <i class="pe-7s-lock icon-gradient bg-malibu-beach">
+        </i>
+      </div>
+      <div>
+        <div class="text-uppercase">API</div>
+        <div class="page-title-subheading">
+          上架商品
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-title-actions">
+            
+            
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="main-card mb-3 card">
+  <div class="card-header">商品列表</div>
+  <ul class="todo-list-wrapper list-group list-group-flush" v-for="data in productDatas">
+    <li class="list-group-item">
+      <div class="todo-indicator bg-success" v-if="data.default"></div>
+      <div class="widget-content p-0">
+        <div class="widget-content-wrapper">
+          <div class="widget-content-left">
+
+            <img width="42" class="rounded" v-bind:src="data.imgUrl" alt="">
+          </div>
+          <div class="widget-content-left">
+
+            <div class="widget-heading">{{data.name}} </div>
+            <div class="widget-subheading"><i>$NTD: {{data.price}} </i></div>
+          </div>
+
+          <div class="widget-content-right widget-content-actions2">
+
+            <span v-if="data.default">
+              <div class="badge badge-pill badge-success">預設</div>
+            </span>
+            <span v-else>
+              <span class="widget-content-right widget-content-actions ">
+                設為預設
+              </span>
+              <button class="border-0 btn-transition btn btn-outline-success">
+                <i class="fa fa-check"></i>
+              </button>
+            </span>
+            <button class="border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#addUser">
+              <i class="pe-7s-note"></i>
+              Edit
+            </button>
+            <button class="border-0 btn-transition btn btn-outline-danger" onclick="return confirm('Are you sure?')">
+              <i class="fa fa-trash-alt"></i>
+            </button>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+
+</div>
+
+
+
+
+
+        </div>
+        <div class="app-wrapper-footer">
+  <div class="app-footer">
+    <div class="app-footer__inner">
+      <div class="app-footer-left">
+        <div class="footer-dots">
+          tronk interactive
+          <div class="dropdown">
+
+            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu">
+
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab-messages-header1" role="tabpanel">
+                  <div class="scroll-area-sm">
+                    <div class="scrollbar-container">
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+    <!-- Modal -->
+
+
+<div class="modal fade bd-example-modal-lg" id="addUser" tabindex="-1" role="dialog"
+  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">新增商品</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <form method="POST" enctype="multipart/form-data">
+
+  <div class="form-row">
+    <div class="col">
+      <label>名稱</label>
+      <input type="text" class="form-control" placeholder="Name" name="name" required>
+    </div>
+    <div class="col">
+
+      <label>金額</label>
+      <input type="number" class=" form-control" placeholder="price" name="price">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>說明</label>
+    <textarea name="description" cols="30" rows="3" class="form-control" placeholder="說明文字"></textarea>
+  </div>
+  <div class="form-group">
+    <label>上傳圖片</label>
+    <input type="file" class="form-control-file">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+              </div>
+      <div class="modal-footer">
+                
+      </div>
+    </div>
+  </div>
+</div>  </div>
+
+
+  <script type="text/javascript" src="/assets/build/js/admin.js?id=80f4edb492f1b0834041"></script>
+  <script type="text/javascript" src="/assets/build/js/main.js?id=8ff50551ccae2f54bc6d"></script>
+
+  </body>
+
+
+</html>

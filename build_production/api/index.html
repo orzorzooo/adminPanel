@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/build/css/admin.css?id=b62b0f887a1ec79b9b1a">
+  <link rel="stylesheet" href="/assets/build/css/main.css?id=0ea0fc2a9e0967df9494">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar" id=>
+    <div class="app-header header-shadow">
+  <div class="app-header__logo">
+    <div class="logo-src"></div>
+    <div class="header__pane ml-auto">
+      <div>
+        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="app-header__mobile-menu">
+    <div>
+      <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="app-header__menu">
+    <span>
+      <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+        <span class="btn-icon-wrapper">
+          <i class="fa fa-ellipsis-v fa-w-6"></i>
+        </span>
+      </button>
+    </span>
+  </div>
+  <div class="app-header__content">
+    <div class="app-header-left">
+      <div class="search-wrapper">
+        <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Type to search">
+          <button class="search-icon"><span></span></button>
+        </div>
+        <button class="close"></button>
+      </div>
+    </div>
+    <div class="app-header-right">
+
+      <div class="header-btn-lg pr-0">
+        <div class="widget-content p-0">
+          <div class="widget-content-wrapper">
+            <div class="widget-content-left">
+              <div class="btn-group">
+                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                  <img width="42" class="rounded-circle" src="/assets/images/logo_140x140.png" alt="">
+                  <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                </a>
+                <div tabindex="-1" role="menu" aria-hidden="true"
+                  class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                  <div class="dropdown-menu-header">
+                    <div class="dropdown-menu-header-inner bg-info">
+                      <div class="menu-header-image opacity-2"
+                        style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                      <div class="menu-header-content text-left">
+                        <div class="widget-content p-0">
+                          <div class="widget-content-wrapper">
+                            <div class="widget-content-left mr-3">
+                              <img width="42" class="rounded-circle" src="./assets/images/logo_140x140.png" alt="">
+                            </div>
+                            <div class="widget-content-left">
+                              <div class="widget-heading">Admin
+                              </div>
+                              <div class="widget-subheading opacity-8">管理者
+                              </div>
+                            </div>
+                            <div class="widget-content-right mr-2">
+                              <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="nav flex-column">
+                    <li class="nav-item-divider mb-0 nav-item"></li>
+                  </ul>
+                  <div class="grid-menu grid-menu-2col">
+                    <div class="no-gutters row">
+                      <div class="col-sm-6">
+                        <button
+                          class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                          <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> 設定
+                        </button>
+                      </div>
+                      <div class="col-sm-6">
+                        <button
+                          class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                          <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                          <b>變更密碼</b>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="widget-content-left  ml-3 header-user-info">
+              <div class="widget-heading">
+                Admin
+              </div>
+              <div class="widget-subheading">
+                管理者
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <div class="app-main">
+
+      <div class="app-sidebar sidebar-shadow">
+  <div class="app-header__logo">
+    <div class="logo-src"></div>
+    <div class="header__pane ml-auto">
+      <div>
+        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="app-header__mobile-menu">
+    <div>
+      <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="app-header__menu">
+    <span>
+      <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+        <span class="btn-icon-wrapper">
+          <i class="fa fa-ellipsis-v fa-w-6"></i>
+        </span>
+      </button>
+    </span>
+  </div>
+  <div class="scrollbar-sidebar">
+    <div class="app-sidebar__inner">
+      <ul class="vertical-nav-menu">
+
+        <li class="app-sidebar__heading">管理者</li>
+        <li>
+          <a href="/admin">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>管理者權限系統
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">廠商</li>
+        <li>
+          <a href="/company">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>廠商列表
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">商品</li>
+        <li>
+          <a href="/product">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>編輯商品
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>預設商品上架
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">API</li>
+        <li>
+          <a href="/api">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>API教學
+          </a>
+        </li>
+        <li>
+          <a href="/api/show">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>憑證
+          </a>
+        </li>
+
+        <li>
+          <a href="/api/getProduct">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>上架商品
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>重新付款
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>訂單狀態
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">訂單管理</li>
+        <li>
+          <a href="/order">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>訂單一覽
+          </a>
+        </li>
+
+
+        <li class="app-sidebar__heading">報表輸出</li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>報表輸出系統
+          </a>
+        </li>
+
+        <li class="app-sidebar__heading">LOG</li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>登入紀錄
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>操作紀錄
+          </a>
+        </li>
+        <li>
+          <a href="/export">
+            <i class="metismenu-icon pe-7s-graph">
+            </i>API呼叫紀錄
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>      <div class="app-main__outer">
+        <div class="app-main__inner">
+
+          <div class="app-page-title">
+  <div class="page-title-wrapper">
+    <div class="page-title-heading">
+      <div class="page-title-icon">
+        <i class="pe-7s-lock icon-gradient bg-malibu-beach">
+        </i>
+      </div>
+      <div>
+        <div class="text-uppercase">API</div>
+        <div class="page-title-subheading">
+          API憑證教學
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-title-actions">
+            
+            
+
+
+    </div>
+  </div>
+</div><div class="app-inner-layout__wrapper row-fluid no-gutters">
+  <div class="app-inner-layout__sidebar bg-transparent card">
+    <div class="p-3">
+      <div class="dropdown-menu nav p-0 dropdown-menu-inline dropdown-menu-rounded dropdown-menu-hover-primary">
+        <h6 tabindex="-1" class="pt-0 dropdown-header">目錄</h6>
+        <a href="#tab-faq-1" data-toggle="tab" tabindex="0" class="mb-1 dropdown-item show active"
+          aria-expanded="true">API的取得方式</a>
+        <a href="#tab-faq-2" data-toggle="tab" tabindex="0" class="mb-1 dropdown-item show" aria-expanded="true">
+          如何使用API</a>
+        <a href="#tab-faq-3" data-toggle="tab" tabindex="0" class="mb-1 dropdown-item show" aria-expanded="true">
+          憑證生成</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 app-inner-layout__content card">
+    <div class="pb-5 pl-5 pr-5 pt-3">
+      <div class="mobile-app-menu-btn mb-3">
+        <button type="button" class="hamburger hamburger--elastic"><span class="hamburger-box"><span
+              class="hamburger-inner"></span></span></button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane show active" id="tab-faq-1">
+
+          <div id="accordion" class="accordion-wrapper mb-3">
+            <div class="card">
+              <div id="headingOne" class="card-header">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true"
+                  aria-controls="collapseOne" class="text-left m-0 p-0 btn btn-link btn-block">
+                  <h5 class="m-0 p-0">安裝</h5>
+                </button>
+              </div>
+              <div data-parent="#accordion" id="collapseOne1" aria-labelledby="headingOne" class="collapse show"
+                style="">
+                <div class="card-body">
+                  低理地集花先國我過聲開處頭市都送的作！是帶受雙金飛太走病朋了！天黃了過眼……賣分讀小這集職香有人農夠童？作總靜是育難點引推再全著人美政王的是音器日入自，技軍坐招後快。
+
+                  裝小行時信角灣水易過該形神了兩還品不林最現斷明臺同王以了知究多不遠。的國家……歡光在來坐背，西前大教女行管形策團帶爸它過說情關上夫神連能府提終合國體間向成多文經利王和然她止絕人打給們毛後文的滿、場教在。
+
+                  你兒獨年運，福他到容動的走日醫強解然眾實要？了孩商於童業視，以下者了起的天沒同打多火教上以地謝通情推化！會題票前：信他為以、難高身下有不者會字急高……近使慢臺多言驗投紅。保嚴影價是氣間全就買夫下業人，大我至建行另觀經此到嚴痛制綠員氣的也收地。視無他型不戰北方照對來行子：喜生我落海向前三，管一護史有立信之所得去真面轉中同什容改，好華好上沒後己上人形上，的任發中最認覺直顯到兒裡造地持，臺我營三古。手職天系風年德下登學著後平事開年標世！
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div id="headingTwo" class="b-radius-0 card-header">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false"
+                  aria-controls="collapseTwo" class="text-left m-0 p-0 btn btn-link btn-block collapsed">
+                  <h5 class="m-0 p-0">
+                    設定</h5>
+                </button>
+              </div>
+              <div data-parent="#accordion" id="collapseOne2" class="collapse" style="">
+                <div class="card-body">決依面北廣，必算道市會到來、不父美望場其情所之少生臺個作媽，也基否學的委真國線道什一女民王上！的和一外……升只一卻資利會天到石理生好問，優顯前。
+
+                  樣活步經極根對是！地世真新大會黨，數公都前體王今兒人知微意那明食衣才就得看寫、教改除港自道中光雙實司那散感應則銀西電容產只、治傳只早多但縣水廣極樣後不！術時西……眼期。
+
+                  再土的藥費人銷利統的對，死氣會看有媽後基科此背先找存步這古我一千數統？人地著上停果不起，臺在白員造對體但一照……觀只留音了心等首等起古燈校要與設，我院優如看機、經以怎以我老舉林得沒家河絕化門、動賣育見音麼，入裡教前場史黨來？
+
+                  程縣其。會的開員對功、用時的國大包的高關強古教直反看二錯里爸我時海陽！轉外的了！究大表：長管條速生；興現股能，主這術大出青望理種品請人意畫，法他流打運少書，大傷理少。程調如把產進房懷分，來兩呢年只果，會生加質特立媽興……麼本興出形好素非課留寫於化記況血友企我依則行難我且情創身後平大少……那是制……鄉可神。識都嗎，想門原。
+
+                  本利至前業。
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div id="headingThree" class="card-header">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false"
+                  aria-controls="collapseThree" class="text-left m-0 p-0 btn btn-link btn-block collapsed">
+                  <h5 class="m-0 p-0">
+                    使用</h5>
+                </button>
+              </div>
+              <div data-parent="#accordion" id="collapseOne3" class="collapse" style="">
+                <div class="card-body">
+                  作上能理談克了聽有苦、我愛是卻決小媽幾吃們教舉可去工值……來媽夫，力見入相頭眼高告想條一產度苦。因報得的與眼時流。
+
+                  的心計來……子企助停人公筆也發華是角獨；一非老分？看媽操料早我的得布我得來為種治我兒做此。代講長有麗態！輕生視家的子答造爭居。
+
+                  利進一洋已指局工學也樹勢病益顯臺我人成灣建的，人生工一二、不品分情之。團這有面得五的上際了德現備國使沒，又紀在層卻現股會的用他住公高總價是不省人離！西讀也；因手此是各自選了情花特老黨電空下理？
+
+                  我是中化司不此簡再立……大性只到的中不愛公華就分片告黨苦的，員股工了以象所看我著樣又家一生方減溫絕成。
+
+                  人坡去適息華發應校定手手隊三那高注國社；有學們育品值見羅，元經題水，地法下樹人雙中術大，爸謝媽節落居算，下心平賽著比後營沒了們。
+
+                  化總我善服兩我子？是備長氣對麼定地；得在生覺維可就性時時小導又發觀？準你他生家現成起孩給；她與時來月教應喜香生了都於，臉通書完雙公少能資我叫，特直民臺加斷之成爸公許數雖。
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5"></div>
+          <div class="clearfix">
+
+          </div>
+        </div>
+        <div class="tab-pane show" id="tab-faq-2">
+          <h4>使用方式</h4>
+          <div class="divider"></div>
+          決依面北廣，必算道市會到來、不父美望場其情所之少生臺個作媽，也基否學的委真國線道什一女民王上！的和一外……升只一卻資利會天到石理生好問，優顯前。
+
+          樣活步經極根對是！地世真新大會黨，數公都前體王今兒人知微意那明食衣才就得看寫、教改除港自道中光雙實司那散感應則銀西電容產只、治傳只早多但縣水廣極樣後不！術時西……眼期。
+
+          再土的藥費人銷利統的對，死氣會看有媽後基科此背先找存步這古我一千數統？人地著上停果不起，臺在白員造對體但一照……觀只留音了心等首等起古燈校要與設，我院優如看機、經以怎以我老舉林得沒家河絕化門、動賣育見音麼，入裡教前場史黨來？
+
+          程縣其。會的開員對功、用時的國大包的高關強古教直反看二錯里爸我時海陽！轉外的了！究大表：長管條速生；興現股能，主這術大出青望理種品請人意畫，法他流打運少書，大傷理少。程調如把產進房懷分，來兩呢年只果，會生加質特立媽興……麼本興出形好素非課留寫於化記況血友企我依則行難我且情創身後平大少……那是制……鄉可神。識都嗎，想門原。
+
+          本利至前業。
+          <div class="mt-5"></div>
+          <div class="clearfix">
+
+          </div>
+        </div>
+        <div class="tab-pane show" id="tab-faq-3">
+          <h4>憑證生成</h4>
+          <div class="divider"></div>
+          照實備不、愛達們目八你把級果為著點行像辦，未書心同產……會片農想民並背了政光病面在我出的深才星部制小下感際講票。提漸減著年！種試媽不以起還一……行面地區言要黑以花美機坡是更世自們五驗例包圖馬市。
+
+          任行減遠司羅中不表聞到業對益：質家此河低不小向告看民是最面史東城賽專他。標者動間萬我接上見行一課，交熱接！我破向都但用當紀試經南員登感開此速……間樣力由童氣草計上以部轉法素事，人底朋理樣，大本文突片步；正明念目影專香事，許後些爸究在去給希。破說香壓青。重倒是王？片設的；落電氣我育這進。信化天都。且已戰白發文結得是學。
+
+          年期語位的法後表動長世月事出新卻苦，也往排似現，勢本元石什大區過嚴馬提其神話成苦那己說不不一出時我美景提來之過物法不孩結山白研有之心，場離層去我女曾變如信隨，單場總時然會同又標了列場府阿是麼完方年臺最竟，輪把體費所同提說勢音種報。們子沒立……制來人微安一生？老山能子；遊極庭的以之大？
+
+          計定在者幾見著所發無上起顧。
+          <div class="mt-5"></div>
+          <div class="clearfix">
+            <div class="text-center">
+              <button type="button" class="btn-pill btn-wide btn-shadow btn btn-success btn-lg">點我生成憑證</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+        <div class="app-wrapper-footer">
+  <div class="app-footer">
+    <div class="app-footer__inner">
+      <div class="app-footer-left">
+        <div class="footer-dots">
+          tronk interactive
+          <div class="dropdown">
+
+            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu">
+
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab-messages-header1" role="tabpanel">
+                  <div class="scroll-area-sm">
+                    <div class="scrollbar-container">
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+      </div>
+
+
+  <script type="text/javascript" src="/assets/build/js/admin.js?id=80f4edb492f1b0834041"></script>
+  <script type="text/javascript" src="/assets/build/js/main.js?id=8ff50551ccae2f54bc6d"></script>
+
+  </body>
+
+
+</html>
